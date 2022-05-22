@@ -25,7 +25,7 @@ body {
 
 .left-box {
   flex-grow: 1;
-  width: 50%;
+  width: 60vw;
   min-width: 345px;
   background-image: url("./img/warren-wong-fNUNt9w3m-Q-unsplash\ \(1\).jpg");
   background-size: cover;
@@ -33,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  color: #fff;
 }
 .sign {
   width: 100%;
@@ -81,11 +82,11 @@ body {
 
 .form-style {
   width: 80%;
-  height: 45vh;
-  min-height: 360px;
+  height: auto;
+  min-width: 360px;
   background-image: url(./img/paul-volkmer-qVotvbsuM_c-unsplash.jpg);
   color: var(--txt);
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   border-radius: 20px 20px 20px 0;
 }
 
@@ -94,24 +95,23 @@ body {
   font-size: 1.4rem;
 }
 
-form {
+.my-form {
   width: 100%;
   height: 70%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 0 10px;
-  justify-content: flex-start;
+  gap: 20px;
+  justify-content: space-around;
   align-items: center;
 }
 
 .form-style .formula {
   display: flex;
   flex-direction: column;
-  margin: 20px;
 }
 .formula input {
-  width: 14vw;
-  height: 2vw;
+  width: 200px;
   padding: 5px;
   border-radius: 5px;
   font-size: 1.1rem;
@@ -145,4 +145,43 @@ a:hover {
   border-radius: 5px;
   color: var(--txt);
   padding: 5px;
+}
+
+@media screen and (max-width: 1095px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .left-box {
+    width: 100vw;
+    height: 10rem;
+  }
+  .sign {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .right-box {
+    align-items: center;
+  }
+
+  .form-style {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .my-form {
+    margin: 0;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .formula {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+  }
 }
