@@ -1,0 +1,148 @@
+:root {
+  --txt: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*Left side*/
+
+.left-box {
+  flex-grow: 1;
+  width: 50%;
+  min-width: 345px;
+  background-image: url("./img/warren-wong-fNUNt9w3m-Q-unsplash\ \(1\).jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sign {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.logo {
+  width: 75px;
+  height: 100px;
+  background-image: url("./img/odin-lined.png");
+  background-size: cover;
+}
+.name {
+  font-size: 2.2rem;
+  color: var(--txt);
+}
+
+/*Right side*/
+
+.right-box {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.text {
+  margin-top: 30px;
+  width: 80%;
+  height: calc(30% - 30px);
+  min-height: 180px;
+}
+
+.head {
+  font-size: 0.8rem;
+}
+
+.words {
+  margin: 30px 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.form-style {
+  width: 80%;
+  height: 45vh;
+  min-height: 360px;
+  background-image: url(./img/paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+  color: var(--txt);
+  padding: 20px;
+  border-radius: 20px 20px 20px 0;
+}
+
+.form-style p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+form {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-style .formula {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.formula input {
+  width: 14vw;
+  height: 2vw;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.info {
+  margin-top: 0px;
+}
+button {
+  background-image: url(./img/paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+  color: var(--txt);
+  font-size: 1.2rem;
+  border-radius: 0 0 20px 20px;
+  padding: 10px;
+}
+button:hover {
+  color: rgb(35, 107, 214);
+}
+.log {
+  margin-top: 20px;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+  color: rgb(35, 107, 214);
+  padding: 5px;
+}
+a:hover {
+  background-color: rgb(35, 107, 214);
+  border-radius: 5px;
+  color: var(--txt);
+  padding: 5px;
+}
